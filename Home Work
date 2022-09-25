@@ -1,0 +1,21 @@
+import turtle
+
+tao = turtle.Pen()
+tao.shape('turtle')
+
+def a(): # 9 เหลี่ยม
+    for i in range(9):
+        tao.forward(20)
+        tao.left(100)
+        tao.forward(20)
+        tao.rt(60)
+
+def b(): # 4 เหลี่ยม
+    for i in range(4):
+        tao.forward(50)
+        tao.left(90)
+
+def go(x,y):
+    tao.penup()
+    tao.goto(x,y)
+    tao.pendown()
